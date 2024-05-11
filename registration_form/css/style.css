@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+:root {
+    --clr-white: #fff;
+    --clr-dark: #333;
+    --clr-blue: #4070f4;
+    --clr-gray: #c7bebe;
+    --clr-gray2: #707070;
+    --clr-p-blue: #0e4bf1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins Bold', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-blue);
+}
+
+.wrapper {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    padding: 34px;
+    border-radius: 6px;
+    background-color: var(--clr-white);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h2 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--clr-dark);
+}
+
+.wrapper h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 5px;
+    background-color: var(--clr-blue);
+}
+
+.wrapper form {
+    margin-top: 30px;
+}
+
+.wrapper form .input-box {
+    height: 52px;
+    margin: 18px 0;
+}
+
+.wrapper form .input-box :where(input, button) {
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--clr-dark);
+    font-family: 'Poppins Medium';
+    outline: none;
+    border: 1.5px solid var(--clr-gray);
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* .wrapper form .input-box :where(input, button) */
+.wrapper form .input-box :where(input, button):focus,
+.wrapper form .input-box :where(input, button):valid {
+    border-color: var(--clr-blue);
+}
+
+.wrapper form .policy {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper form .policy h3, .wrapper form .text h3 {
+    color: var(--clr-gray2);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.wrapper .input-box.button button {
+    color: var(--clr-white);
+    background-color: var(--clr-blue);
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper .input-box.button button:hover {
+    background-color: var(--clr-p-blue);
+}
+
+.wrapper form .text h3 {
+    color: var(--clr-dark);
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper form .text h3 a {
+    color: var(--clr-blue);
+    text-decoration: none;
+}
+
+.wrapper form .text h3 a:hover {
+    text-decoration: underline;
+}
