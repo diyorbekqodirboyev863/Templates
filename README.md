@@ -1,2 +1,2 @@
 # Templates
-Free Templates directory!
+Templates directory!
