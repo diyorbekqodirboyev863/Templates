@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website App">
+    <meta name="author" content="diyorbekqodirboyev863">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Website App</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navlist">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button type="button" class="login-btn">Login</button>
+        </nav>
+    </header>
+
+    <!-- WRAPPER -->
+    <div class="wrapper">
+        <!-- CLOSE ICON -->
+        <span onclick="removePopUp()" class="close-icon">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+
+                <!-- EMAIL -->
+                <div class="inp-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="inp-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+
+                <!-- REMEMBER FORGOT -->
+                <div class="rem-forgot">
+                    <label for="rem-forgot"><input type="checkbox" id="rem-forgot"> Remember me!</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit" class="submit-btn">Login</button>
+
+                <!-- LOGIN REGISTER -->
+                <div class="login-register">
+                    <p>Don't have an account? <a class="register-link" href="#">Register!</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- REGISTER -->
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+
+                <!-- USERNAME -->
+                <div class="inp-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" id="username" required>
+                    <label for="username">Username</label>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="inp-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="inp-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+
+                <!-- REMEMBER FORGOT -->
+                <div class="rem-forgot">
+                    <label for="agree"><input type="checkbox" id="agree"> I agree to the terms & conditions</label>
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit" class="submit-btn">Register</button>
+
+                <!-- LOGIN REGISTER -->
+                <div class="login-register">
+                    <p>Allready have an account? <a class="login-link" href="#">Login!</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
